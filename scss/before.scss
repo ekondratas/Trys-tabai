@@ -1,0 +1,42 @@
+button::before {
+    content: "";
+    color: crimson;
+    background: crimson;
+    position: absolute;
+    left: -2px;
+    right: 0;
+    top: -20px;
+    bottom: 0;
+    width: 110px;
+    height: 110px;
+    transition: 1s;
+  }
+  
+  button:hover::before {
+    background: crimson;
+    transform: translate(0, 100px);
+  }
+  
+  button::after {
+    content: "";
+    color: crimson;
+    background: transparent;
+    position: absolute;
+    left: -2px;
+    right: 0;
+    top: -20px;
+    bottom: 0;
+    width: 110px;
+    height: 110px;
+    transition: 0.3s ease;
+    transition-delay: 0.8s;
+  }
+  
+  button:hover::after {
+    background: crimson;
+    transform: translate(100px, 0);
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
